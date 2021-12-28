@@ -1,4 +1,4 @@
-FROM maven AS build
+FROM docker.io/library/maven AS build
 ADD . /log4jpwn
 WORKDIR /log4jpwn
 RUN mvn clean compile assembly:single
